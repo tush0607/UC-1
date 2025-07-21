@@ -28,7 +28,209 @@
 <div class="small">(To be used between June – July 2025)</div>
 
 <form action="https://formspree.io/f/mdkdaygp" method="POST">
-  <!-- Form contents here -->
+
+  <table>
+    <tr>
+      <td><label for="candidate">Candidate Name:</label></td>
+      <td><input type="text" id="candidate" name="candidate" required></td>
+      <td><label for="assessor">Assessor Name:</label></td>
+      <td><input type="text" id="assessor" name="assessor" required></td>
+    </tr>
+    <tr>
+      <td><label for="date">Date of Interview:</label></td>
+      <td><input type="date" id="date" name="date" required></td>
+      <td><label for="position">Position:</label></td>
+      <td><input type="text" id="position" name="position"></td>
+    </tr>
+  </table>
+
+  <div class="section-title">Section 1: Contextual Fit</div>
+  <div class="small">(Assesses role understanding, situational awareness, and environmental adaptability)</div>
+  <table class="criteria-table">
+    <tr>
+      <th>Criteria</th>
+      <th>Description</th>
+      <th>Rating (1–5)</th>
+      <th>Assessor’s Remarks</th>
+    </tr>
+    <tr>
+      <td>Role Understanding</td>
+      <td>How well does the candidate understand the responsibilities and requirements of the position?</td>
+      <td>
+        <select name="role_understanding_rating" required>
+          <option value="">Select</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+      </td>
+      <td><textarea name="role_understanding_remarks" rows="2"></textarea></td>
+    </tr>
+    <tr>
+      <td>Situational Awareness</td>
+      <td>Can the candidate appropriately interpret situations and adapt their response?</td>
+      <td>
+        <select name="situational_awareness_rating" required>
+          <option value="">Select</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+      </td>
+      <td><textarea name="situational_awareness_remarks" rows="2"></textarea></td>
+    </tr>
+    <tr>
+      <td>Environmental Adaptability</td>
+      <td>Does the candidate demonstrate flexibility and adaptability in changing environments?</td>
+      <td>
+        <select name="environmental_adaptability_rating" required>
+          <option value="">Select</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+      </td>
+      <td><textarea name="environmental_adaptability_remarks" rows="2"></textarea></td>
+    </tr>
+  </table>
+
+  <div class="section-title">Section 2: Culture Fit (CIRCA Values)</div>
+  <div class="small">(Assesses alignment with Udayan Care’s values through behavior-based evidence)</div>
+  <table class="criteria-table">
+    <tr>
+      <th>Value</th>
+      <th>Guiding Interview Question</th>
+      <th>Rating (1–5)</th>
+      <th>Assessor’s Evidence/Remarks</th>
+    </tr>
+    <tr>
+      <td>Compassionate</td>
+      <td>Can you share an example where you served someone or supported a cause out of compassion or love?</td>
+      <td>
+        <select name="compassionate_rating" required>
+          <option value="">Select</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+      </td>
+      <td><textarea name="compassionate_remarks" rows="2"></textarea></td>
+    </tr>
+    <tr>
+      <td>Inspiring</td>
+      <td>Describe a time when you motivated a team or were inspired to take purposeful action.</td>
+      <td>
+        <select name="inspiring_rating" required>
+          <option value="">Select</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+      </td>
+      <td><textarea name="inspiring_remarks" rows="2"></textarea></td>
+    </tr>
+    <tr>
+      <td>Respectful</td>
+      <td>Give an example of how you showed respect for someone’s opinion or treated people fairly.</td>
+      <td>
+        <select name="respectful_rating" required>
+          <option value="">Select</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+      </td>
+      <td><textarea name="respectful_remarks" rows="2"></textarea></td>
+    </tr>
+    <tr>
+      <td>Competent</td>
+      <td>How have you developed your skills or helped others grow professionally in the past?</td>
+      <td>
+        <select name="competent_rating" required>
+          <option value="">Select</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+      </td>
+      <td><textarea name="competent_remarks" rows="2"></textarea></td>
+    </tr>
+    <tr>
+      <td>Accountable</td>
+      <td>Share a situation where you took responsibility for a failure and what you did to address it.</td>
+      <td>
+        <select name="accountable_rating" required>
+          <option value="">Select</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+      </td>
+      <td><textarea name="accountable_remarks" rows="2"></textarea></td>
+    </tr>
+  </table>
+
+  <div class="section-title">Additional Capabilities Questions</div>
+  <p class="small">(Click “Add More Questions” to insert any extra questions you asked about capabilities and write your evaluation for each.)</p>
+  <div id="additional-questions">
+    <div class="additional-question-row">
+      <input type="text" name="capability_question_1" placeholder="Enter additional question..." style="width:48%;padding:6px;margin-bottom:8px;">
+      <textarea name="capability_evaluation_1" placeholder="Enter evaluation/remarks..." rows="2" style="width:48%;padding:6px;margin-left:8px;"></textarea>
+    </div>
+  </div>
+  <button type="button" onclick="addAdditionalQuestion()" style="margin-top:12px;padding:8px 16px;background-color:#3467eb;color:#fff;border:none;border-radius:4px;cursor:pointer;">Add More Questions</button>
+
+  <script>
+    function addAdditionalQuestion() {
+      const container = document.getElementById('additional-questions');
+      const count = container.children.length + 1;
+      const newRow = document.createElement('div');
+      newRow.className = 'additional-question-row';
+      newRow.style.marginBottom = '8px';
+      newRow.innerHTML = `<input type="text" name="capability_question_${count}" placeholder="Enter additional question..." style="width:48%;padding:6px;">` +
+        `<textarea name="capability_evaluation_${count}" placeholder="Enter evaluation/remarks..." rows="2" style="width:48%;padding:6px;margin-left:8px;"></textarea>`;
+      container.appendChild(newRow);
+    }
+  </script>
+
+
+  <div class="section-title">Overall Assessment & Recommendations</div>
+  <table>
+    <tr>
+      <td style="width:30%"><label for="overall_summary">Overall Summary:</label></td>
+      <td><textarea name="overall_summary" id="overall_summary" rows="3"></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="recommendation">Recommendation:</label></td>
+      <td>
+        <select name="recommendation" id="recommendation" required>
+          <option value="">Select</option>
+          <option value="Strongly Recommend">Strongly Recommend</option>
+          <option value="Recommend">Recommend</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Do Not Recommend">Do Not Recommend</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+
+  <button type="submit">Submit Assessment</button>
 </form>
 </body>
 </html>
